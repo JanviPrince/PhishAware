@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PhishAware</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Dark mode toggle -->
+  <button id="darkModeToggle"><span id="modeIcon">🌙</span> Toggle Mode</button>
+
+  <h1>🛡️ PhishAware</h1>
+  <p class="tagline">Spot the Scam. Stay Secure.</p>
+
+  <section id="quiz">
+    <h2>🧠 Can You Spot the Phish?</h2>
+    <div id="question">Loading question...</div>
+    <div id="options">
+      <button onclick="checkAnswer(true)">Legit</button>
+      <button onclick="checkAnswer(false)">Phish</button>
+    </div>
+    <p id="feedback"></p>
+  </section>
+
+  <section id="tips">
+    <h2>💡 Cyber Safety Tips</h2>
+    <ul>
+      <li>Check sender's email address before clicking.</li>
+      <li>Never download attachments from unknown sources.</li>
+      <li>Hover over links to see where they lead.</li>
+      <li>Use two-factor authentication on all accounts.</li>
+      <li>Update your passwords regularly.</li>
+    </ul>
+  </section>
+
+ <section id="report">
+  <h2>🚨 Report a Phishing Email</h2>
+  <form id="reportForm">
+    <input type="text" id="reporterName" placeholder="Your Name (optional)" /><br><br>
+    <textarea id="emailDescription" placeholder="Describe the suspicious email..." rows="5" required></textarea><br><br>
+    <button type="submit">📩 Submit Report</button>
+  </form>
+  <p id="reportStatus"></p>
+</section>
+ 
+<section id="analyzer">
+  <h2>🔍 Secure Email Analyzer</h2>
+  <textarea id="emailInput" rows="6" placeholder="Paste a suspicious email here..."></textarea><br><br>
+  <button onclick="analyzeEmail()">Analyze</button>
+  <p id="analysisResult"></p>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>

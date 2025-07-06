@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f8ff;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #0055aa;
+}
+
+.tagline {
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+#quiz, #tips {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#options button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#options button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  text-align: left;
+}
+
+/* 🔄 DARK MODE STYLES */
+body.dark-mode {
+  background-color: #121212;
+  color: #eeeeee;
+}
+
+body.dark-mode #quiz,
+body.dark-mode #tips {
+  background-color: #1f1f1f;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode button {
+  background-color: #444;
+  color: white;
+}
+
+#darkModeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#report {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#report textarea,
+#report input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+#report button {
+  padding: 10px 20px;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#reportStatus {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}
+
+/* Dark mode compatibility */
+body.dark-mode #report {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode #report textarea,
+body.dark-mode #report input {
+  background-color: #333;
+  color: white;
+  border: 1px solid #777;
+}
+#analyzer {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#analyzer textarea {
+  width: 90%;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+#analyzer button {
+  padding: 10px 20px;
+  background-color: #009688;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#analysisResult {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Dark mode compatibility */
+body.dark-mode #analyzer {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode #analyzer textarea {
+  background-color: #333;
+  color: white;
+  border: 1px solid #777;
+}
